@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 Casanova.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="netbond_settings"
+    android:title="@string/net_bond_title">
+
+    <com.android.settings.widget.SettingsMainSwitchPreference
+        android:key="netbond_enabled"
+        android:title="@string/netbond_use"
+        android:persistent="false"
+        settings:keywords="@string/keywords_net_bond"
+        settings:userRestriction="no_config_vpn" />
+
+    <com.android.settingslib.widget.UntitledPreferenceCategory
+        android:key="netbond_status_category">
+
+        <Preference
+            android:key="netbond_status"
+            android:title="@string/netbond_connection_status"
+            android:summary="@string/netbond_status_off"
+            android:icon="@drawable/ic_settings_netbond"
+            android:selectable="true" />
+    </com.android.settingslib.widget.UntitledPreferenceCategory>
+
+    <PreferenceCategory
+        android:key="netbond_mode_category"
+        android:title="@string/netbond_mode_category_title">
+
+        <ListPreference
+            android:key="netbond_mode"
+            android:title="@string/netbond_mode_title"
+            android:entries="@array/netbond_mode_entries"
+            android:entryValues="@array/netbond_mode_values"
+            android:icon="@drawable/ic_netbond_mode_turbo"
+            android:persistent="false" />
+
+        <Preference
+            android:key="netbond_mode_info"
+            android:title="@string/netbond_mode_info_title"
+            android:summary="@string/netbond_mode_info_summary"
+            android:icon="@drawable/ic_info_outline_24dp"
+            android:persistent="false" />
+
+        <Preference
+            android:key="netbond_excluded_apps"
+            android:title="@string/netbond_excluded_apps_title"
+            android:summary="@string/netbond_excluded_apps_summary"
+            android:icon="@drawable/ic_apps"
+            android:persistent="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="netbond_statistics"
+        android:title="@string/netbond_live_statistics">
+
+        <com.android.settings.netbond.NetBondStatsPreference
+            android:key="netbond_stats_grid"
+            android:selectable="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="netbond_networks"
+        android:title="@string/netbond_networks">
+
+        <Preference
+            android:key="netbond_waiting"
+            android:order="1000"
+            android:title="@string/netbond_notif_waiting"
+            android:summary="@string/netbond_waiting_summary"
+            android:selectable="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="netbond_chart_category"
+        android:title="@string/netbond_last_minute">
+
+        <com.android.settings.netbond.NetBondChartPreference
+            android:key="netbond_chart"
+            android:selectable="false" />
+    </PreferenceCategory>
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="netbond_footer"
+        android:title="@string/netbond_footer"
+        android:selectable="false" />
+</PreferenceScreen>
