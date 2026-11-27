@@ -72,3 +72,8 @@
 
 # Keep the device state AppFunction schema
 -keep class com.google.android.appfunctions.schema.common.v1.devicestate.** { *; }
+
+# Keep the gomobile bindings used by the Network Bonding VPN engine. JNI symbol names
+# are derived from these class and method names.
+-keep class go.** { *; }
+-keep class netbond.** { *; }

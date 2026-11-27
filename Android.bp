@@ -142,6 +142,9 @@ android_library {
         "ax_easteregg",
         "ax_settings_res",
         "AxionPartsLib",
+
+        // NetBond dependencies
+        "netbond-java",
     ],
 
     plugins: [
@@ -196,6 +199,7 @@ android_app {
         "settings-platform-compat-config",
     ],
     static_libs: ["Settings-core"],
+    jni_libs: ["libgojni"],
     uses_libs: ["org.apache.http.legacy"],
     use_resource_processor: true,
     resource_dirs: [],
