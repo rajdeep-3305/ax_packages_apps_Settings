@@ -61,6 +61,8 @@ import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
 import com.android.settings.biometrics.IdentityCheckBiometricErrorDialog;
 import com.android.settings.core.SubSettingLauncher;
+import com.android.settings.netbond.NetBondFragment;
+import org.netbond.android.BondTileService;
 import com.android.settings.dashboard.RestrictedDashboardFragment;
 import com.android.settings.development.autofill.AutofillCategoryController;
 import com.android.settings.development.autofill.AutofillLoggingLevelPreferenceController;
@@ -254,6 +256,21 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        final Intent intent = getActivity() != null ? getActivity().getIntent() : null;
+        if (intent != null && TextUtils.equals(ACTION_QS_TILE_PREFERENCES, intent.getAction())) {
+            final ComponentName componentName = intent.getParcelableExtra(
+                    Intent.EXTRA_COMPONENT_NAME, ComponentName.class);
+            if (componentName != null
+                    && BondTileService.class.getName().equals(componentName.getClassName())) {
+                new SubSettingLauncher(requireContext())
+                        .setDestination(NetBondFragment.class.getName())
+                        .setTitleRes(R.string.net_bond_title)
+                        .setSourceMetricsCategory(getMetricsCategory())
+                        .launch();
+                finish();
+                return;
+            }
+        }
         SearchMenuController.init(this);
         if (Utils.isMonkeyRunning()) {
             getActivity().finish();
