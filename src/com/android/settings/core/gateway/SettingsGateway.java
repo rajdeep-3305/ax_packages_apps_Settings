@@ -209,6 +209,7 @@ import com.android.settings.system.ShadePanelsFragment;
 import com.android.settings.system.SystemDashboardFragment;
 import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
+import com.android.settings.netbond.NetBondFragment;
 import com.android.settings.vpn2.VpnSettings;
 import com.android.settings.wallpaper.WallpaperTypeSettings;
 import com.android.settings.webview.WebViewAppPicker;
@@ -242,6 +243,7 @@ public class SettingsGateway {
             WifiP2pSettings.class.getName(),
             WifiTetherSettings.class.getName(),
             BackgroundCheckSummary.class.getName(),
+            NetBondFragment.class.getName(),
             VpnSettings.class.getName(),
             DataSaverSummary.class.getName(),
             DateTimeSettings.class.getName(),
