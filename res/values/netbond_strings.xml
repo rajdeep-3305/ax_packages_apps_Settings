@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 Casanova.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="net_bond_title">Network Bonding</string>
+    <string name="net_bond_summary">Combine Wi-Fi and mobile data</string>
+    <string name="netbond_app_name">Network Bonding</string>
+    <string name="netbond_qs_label">Net Bond</string>
+    <string name="netbond_channel_name">Network Bonding status</string>
+    <string name="netbond_notif_title">Bonding your connections</string>
+    <string name="netbond_notif_waiting">Waiting for networks</string>
+    <string name="netbond_stop">Stop</string>
+    <string name="netbond_vpn_denied">Network Bonding needs VPN permission to route traffic.</string>
+    <string name="keywords_net_bond">network bonding, network bond, netbond, multi-link, link aggregation, vpn, wi-fi, mobile data, cellular, speed, turbo boost</string>
+    <!-- Main switch on the Network Bonding page. -->
+    <string name="netbond_use">Use Network Bonding</string>
+    <string name="netbond_connection_status">Connection status</string>
+    <string name="netbond_status_off">Off</string>
+    <string name="netbond_status_on">On</string>
+    <string name="netbond_status_starting">Connecting…</string>
+    <string name="netbond_status_permission">Waiting for VPN permission</string>
+    <string name="netbond_waiting_summary">Waiting for Wi-Fi or mobile data. Make sure both are switched on.</string>
+    <plurals name="netbond_status_networks">
+        <item quantity="one">Using %d network</item>
+        <item quantity="other">Bonding %d networks</item>
+    </plurals>
+    <string name="netbond_status_hint_wifi">Turn on Wi-Fi to bond</string>
+    <string name="netbond_status_hint_mobile">Turn on mobile data to bond</string>
+    <string name="netbond_status_dialog_title">Connection details</string>
+    <string name="netbond_status_internet_settings">Internet settings</string>
+    <string name="netbond_status_close">Close</string>
+    <string name="netbond_status_battery_saver">Battery Saver active (Data Saver)</string>
+    <string name="netbond_battery_saver_short">Battery Saver</string>
+    <string name="netbond_status_ipv4_ipv6">IPv4 + IPv6</string>
+    <string name="netbond_status_ipv4_only">IPv4</string>
+    <string name="netbond_status_ipv6_only">IPv6</string>
+
+    <!-- Operation mode -->
+    <string name="netbond_mode_category_title">Bonding policy</string>
+    <string name="netbond_mode_title">Mode</string>
+    <string name="netbond_mode_turbo">Turbo Boost (Max speed)</string>
+    <string name="netbond_mode_adaptive">Smart Adaptive (QoS)</string>
+    <string name="netbond_mode_saver">Data Saver (Wi-Fi preferred)</string>
+    <string name="netbond_mode_split">Split Evenly (50/50)</string>
+    <string name="netbond_mode_turbo_name">Turbo Boost</string>
+    <string name="netbond_mode_adaptive_name">Smart Adaptive</string>
+    <string name="netbond_mode_saver_name">Data Saver</string>
+    <string name="netbond_mode_split_name">Split Evenly</string>
+    <string name="netbond_mode_adaptive_qs">Adaptive</string>
+
+    <!-- Short summaries displayed on the closed preference -->
+    <string name="netbond_mode_turbo_short">Turbo Boost · Maximum speed across all networks</string>
+    <string name="netbond_mode_adaptive_short">Smart Adaptive · Low ping for gaming &amp; voice</string>
+    <string name="netbond_mode_saver_short">Data Saver · Wi-Fi primary, preserves cellular data</string>
+    <string name="netbond_mode_split_short">Split Evenly · 50/50 symmetric connection split</string>
+
+    <!-- About Bonding Modes Explainer -->
+    <string name="netbond_mode_info_title">About bonding modes</string>
+    <string name="netbond_mode_info_summary">Learn which mode to choose for gaming, downloads, or saving data</string>
+    <string name="netbond_mode_info_dialog_title">About Bonding Modes</string>
+    <string name="netbond_mode_turbo_desc">Combines Wi-Fi and mobile data proportionally for peak bandwidth.\nBest for: Downloads, updates, and cloud backups.</string>
+    <string name="netbond_mode_adaptive_desc">Steers latency-sensitive packets to the lowest-ping link while bonding bulk traffic.\nBest for: Online gaming, voice calls, and VoIP.</string>
+    <string name="netbond_mode_saver_desc">Prefers Wi-Fi to save cellular data, engaging mobile data seamlessly if Wi-Fi drops.\nBest for: Limited data plans.</string>
+    <string name="netbond_mode_split_desc">Distributes new connections 50/50 across both networks.\nBest for: Links with similar speeds and latency.</string>
+    <string name="netbond_mode_info_disclaimer">Actual speeds depend on your Wi-Fi, mobile carrier, and app behavior. Single-connection transfers cannot exceed one link\'s speed, so try different modes to see what works best on your networks.</string>
+    <string name="netbond_got_it">Got it</string>
+
+    <!-- App bypass -->
+    <string name="netbond_excluded_apps_title">App bypass</string>
+    <string name="netbond_excluded_apps_summary">Bypass the bonded tunnel for banking, streaming, and local network apps</string>
+    <string name="netbond_excluded_apps_dialog_desc">Bypassed apps skip bonding and use your phone\'s default connection (Wi-Fi when connected, otherwise mobile data). Useful for banking, streaming, and local network apps.</string>
+    <string name="netbond_excluded_apps_none">No apps bypassed (all apps bonded)</string>
+    <plurals name="netbond_excluded_apps_count">
+        <item quantity="one">%d app bypassed</item>
+        <item quantity="other">%d apps bypassed</item>
+    </plurals>
+
+    <string name="netbond_live_statistics">Live statistics</string>
+    <string name="netbond_download_label">↓ Download</string>
+    <string name="netbond_upload_label">↑ Upload</string>
+    <string name="netbond_transferred">Transferred this session</string>
+    <string name="netbond_networks">Networks</string>
+    <string name="netbond_network_up">Connected</string>
+    <string name="netbond_network_checking">Checking internet access</string>
+    <string name="netbond_network_no_internet">No internet access</string>
+    <plurals name="netbond_network_count">
+        <item quantity="one">%d network</item>
+        <item quantity="other">%d networks</item>
+    </plurals>
+    <plurals name="netbond_open_connections">
+        <item quantity="one">%d open connection</item>
+        <item quantity="other">%d open connections</item>
+    </plurals>
+    <string name="netbond_details_transferred">%1$s transferred</string>
+    <string name="netbond_details_meta">%1$s · %2$d%% share · %3$d active</string>
+    <string name="netbond_details_meta_idle">%1$s · %2$d active</string>
+    <!-- Network state, open connections, traffic share, download rate, upload rate and bytes moved. -->
+    <string name="netbond_network_summary">%1$s · %2$d%% share\n↓ %3$s  ↑ %4$s · %5$s</string>
+    <string name="netbond_network_summary_idle">%1$s\n↓ %2$s  ↑ %3$s · %4$s</string>
+    <string name="netbond_last_minute">Traffic activity</string>
+    <string name="netbond_chart_start">60 seconds ago</string>
+    <string name="netbond_chart_end">Now</string>
+    <!-- Network name and its current combined upload/download rate. -->
+    <string name="netbond_chart_series">%1$s: %2$s</string>
+    <!-- Accessibility summary: chart time range and series with current rates. -->
+    <string name="netbond_chart_description">Combined traffic over the last 60 seconds. %1$s</string>
+    <string name="netbond_footer">Network Bonding balances connections across Wi-Fi and mobile data using an on-device local VPN with no external servers.\n\nMobile data stays active while bonding and may incur carrier charges.</string>
+
+    <string-array name="netbond_mode_entries">
+        <item>@string/netbond_mode_turbo</item>
+        <item>@string/netbond_mode_adaptive</item>
+        <item>@string/netbond_mode_saver</item>
+        <item>@string/netbond_mode_split</item>
+    </string-array>
+    <string-array name="netbond_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

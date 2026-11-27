@@ -99,5 +99,9 @@
 
     <!-- Keyboard a11y input dialog -->
     <color name="input_dialog_slider_progress">@android:color/system_on_primary_container_dark</color>
+
+    <!-- Network Bonding live graph series colors (Dark mode) -->
+    <color name="netbond_chart_wifi">#38BDF8</color>
+    <color name="netbond_chart_cellular">#FB923C</color>
 </resources>
 

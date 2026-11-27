@@ -297,4 +297,8 @@
 
     <color name="gm_grey_900">#202124</color>
 
+
+    <!-- Network Bonding live graph series colors (Light mode) -->
+    <color name="netbond_chart_wifi">#0284C7</color>
+    <color name="netbond_chart_cellular">#EA580C</color>
 </resources>
